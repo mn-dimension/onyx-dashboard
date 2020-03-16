@@ -21,6 +21,10 @@ Test:
 Clone this repsitory and `cd onyx-dashboard && jenv versions` should result in version 1.8 having a * next to it.
 The code will now build via `lein uberjar`
 
+Run:
+
+`java -jar target/onyx-dashboard.jar localhost:2181 1` where zookeeper is listening localy with default port 2181.
+
 **UNMAINTAINED**
 
 A dashboard for the [Onyx](https://github.com/onyx-platform/onyx) distributed computation system.
