@@ -6,13 +6,13 @@ Additional instructions to get working on OSX March 2020.
 
 Why:
 
-This repostitory will not build via lein uberjar. 
-To resolve this we need to make sure we are using a compatible Java version; 1.8 works (there may be more)
-The additon to this project over the original is to add a config file to change the java version via jenv.
+This repostitory will not build via `lein uberjar`. 
+To resolve this we need to make sure we are using a compatible Java version; 1.8 works (more versions may be compatible)
+The additon to this project over the original is to add a config file to change the java version via [jenv](https://github.com/jenv/jenv).
 
 How:
 
-1. Install [jenv](https://github.com/jenv/jenv) via homebrew via `brew install jenv` and follow the installation instructions.
+1. Install [jenv](https://github.com/jenv/jenv) via homebrew with `brew install jenv` and follow the [instructions](https://github.com/jenv/jenv#11-installing-jenv).
 2. Install java version via homebrew `brew cask install homebrew/cask-versions/adoptopenjdk8`
 3. Add the versions of java to jenv `jenv add $(/usr/libexec/java_home -v 1.8) && jenv add $(/usr/libexec/java_home)`
 
